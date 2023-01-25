@@ -1,14 +1,15 @@
 ﻿Imports System.Data.OleDb
+Imports System.Data
 
 Module modData
     Public con As New OleDb.OleDbConnection
     Public dsBilar As New DataSet
-    Public daBilar As OleDbDataAdapter
+    Public daBilar As New OleDbDataAdapter
 
-    Public Sub dbConnect()
-        'Kombinera sökvägar, databasens namn mm till en dbSouce
+    Public Function DbConnect()
+        'Kombinera sökvägar, databasens namn mm till en dbSource
         Dim dbProvider As String = "PROVIDER=Microsoft.ACE.OLEDB.12.0;"
-        Dim dbName As String = "Miniprojekt.accdb"
+        Dim dbName As String = "Miniprojekt2.accdb"
         Dim dbPath As String = "C:\Users\TildeFagerström\Documents\GitHub\Windowsprogrammering-Miniprojekt\Miniprojekt"
         Dim dbSource As String = "Data source=" & dbPath & "\" & dbName
         Dim sql As String
@@ -23,25 +24,25 @@ Module modData
 
 
         'Välj data att visa
-        'sql = "SELECT * FROM adresser"
+        sql = "SELECT * FROM countries"
 
 
         'Koppla in databasen och fyll den
-        'daBilar = New OleDbDataAdapter(sql, con)
-        'daBilar.MissingSchemaAction = MissingSchemaAction.AddWithKey
-        'daBilar.Fill(dsBilar, "Adressbok")
+        daBilar = New OleDbDataAdapter(sql, con)
+        daBilar.MissingSchemaAction = MissingSchemaAction.AddWithKey
+        daBilar.Fill(dsBilar, "Miniprojekt")
 
-    End Sub
+    End Function
 
     Public Function hamtaData(sql As String) As DataTable
         ' Skapa en Datatable för returen
         Dim dt As New DataTable
 
         ' Skapa ett kommandoobjekt för att läsa databasen
-        Dim cmd As New OleDb.OleDbConnection(sql, cnChinook())
+        Dim cmd As New OleDbCommand(sql, con)
 
         ' Skapa en dataadapter för att exekvera kommandot
-        Dim da As New SQLite.SQLiteDataAdapter(cmd)
+        Dim da As New OleDbDataAdapter(cmd)
 
         ' Fyll returobjektet
         da.Fill(dt)

@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "JRfeL13zMMd4a6BbpNPPuqPoFtQqp/U/zQBp+QL1x3OcSreqeb/ROf2Idfa0umY4Jco4DgxPvVSXz66PEWZAGA==",
+  "dgSpecHash": "xPSXUxcr9qw5vMOJx5wveniecRqsvZ8r6DUhDoVTMLT6lLYuMUoj/8gvHCjiR/y6tQuUfvjiXetlfryn2O8kcg==",
   "success": true,
   "projectFilePath": "C:\\Users\\TildeFagerström\\Documents\\GitHub\\Windowsprogrammering-Miniprojekt\\P10_Bilar\\Bilar\\Bilar.vbproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\TildeFagerström\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\TildeFagerström\\.nuget\\packages\\system.configuration.configurationmanager\\7.0.0\\system.configuration.configurationmanager.7.0.0.nupkg.sha512",
+    "C:\\Users\\TildeFagerström\\.nuget\\packages\\system.data.oledb\\7.0.0\\system.data.oledb.7.0.0.nupkg.sha512",
+    "C:\\Users\\TildeFagerström\\.nuget\\packages\\system.diagnostics.performancecounter\\7.0.0\\system.diagnostics.performancecounter.7.0.0.nupkg.sha512",
+    "C:\\Users\\TildeFagerström\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
+    "C:\\Users\\TildeFagerström\\.nuget\\packages\\system.security.cryptography.protecteddata\\7.0.0\\system.security.cryptography.protecteddata.7.0.0.nupkg.sha512",
+    "C:\\Users\\TildeFagerström\\.nuget\\packages\\system.security.permissions\\7.0.0\\system.security.permissions.7.0.0.nupkg.sha512",
+    "C:\\Users\\TildeFagerström\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

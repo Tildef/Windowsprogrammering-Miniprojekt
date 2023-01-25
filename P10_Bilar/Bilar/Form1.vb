@@ -1,7 +1,10 @@
 ﻿Imports System.ComponentModel.Design.Serialization
+Imports System.Data.OleDb
+
 
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        DbConnect()
         reloadT()
     End Sub
 
@@ -77,6 +80,13 @@ Public Class Form1
 
     Private Sub btnNewCountry_Click(sender As Object, e As EventArgs) Handles btnNewCountry.Click
         If frmNewCountry.ShowDialog() = DialogResult.OK Then
+            'Ladda om trädvyn
+            reloadT()
+        End If
+    End Sub
+
+    Private Sub btnNewCarBrand_Click(sender As Object, e As EventArgs) Handles btnNewCarBrand.Click
+        If frmNewCarBrand.ShowDialog() = DialogResult.OK Then
             'Ladda om trädvyn
             reloadT()
         End If

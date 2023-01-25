@@ -24,12 +24,15 @@ Partial Class frmNewCountry
     Private Sub InitializeComponent()
         Me.lblNewCountry = New System.Windows.Forms.Label()
         Me.txtNewCountry = New System.Windows.Forms.TextBox()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.btnUndo = New System.Windows.Forms.Button()
+        Me.btnDelete = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblNewCountry
         '
         Me.lblNewCountry.AutoSize = True
-        Me.lblNewCountry.Location = New System.Drawing.Point(217, 58)
+        Me.lblNewCountry.Location = New System.Drawing.Point(138, 43)
         Me.lblNewCountry.Name = "lblNewCountry"
         Me.lblNewCountry.Size = New System.Drawing.Size(77, 15)
         Me.lblNewCountry.TabIndex = 0
@@ -37,16 +40,50 @@ Partial Class frmNewCountry
         '
         'txtNewCountry
         '
-        Me.txtNewCountry.Location = New System.Drawing.Point(139, 117)
+        Me.txtNewCountry.Location = New System.Drawing.Point(74, 78)
         Me.txtNewCountry.Name = "txtNewCountry"
-        Me.txtNewCountry.Size = New System.Drawing.Size(247, 23)
+        Me.txtNewCountry.Size = New System.Drawing.Size(201, 23)
         Me.txtNewCountry.TabIndex = 1
+        '
+        'btnSave
+        '
+        Me.btnSave.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.btnSave.Location = New System.Drawing.Point(28, 126)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(66, 31)
+        Me.btnSave.TabIndex = 2
+        Me.btnSave.Text = "Save"
+        Me.btnSave.UseVisualStyleBackColor = False
+        '
+        'btnUndo
+        '
+        Me.btnUndo.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.btnUndo.Location = New System.Drawing.Point(112, 126)
+        Me.btnUndo.Name = "btnUndo"
+        Me.btnUndo.Size = New System.Drawing.Size(66, 31)
+        Me.btnUndo.TabIndex = 3
+        Me.btnUndo.Text = "Undo"
+        Me.btnUndo.UseVisualStyleBackColor = False
+        '
+        'btnDelete
+        '
+        Me.btnDelete.BackColor = System.Drawing.Color.Red
+        Me.btnDelete.Location = New System.Drawing.Point(237, 126)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(66, 31)
+        Me.btnDelete.TabIndex = 4
+        Me.btnDelete.Text = "Delete"
+        Me.btnDelete.UseVisualStyleBackColor = False
         '
         'frmNewCountry
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(538, 344)
+        Me.BackColor = System.Drawing.Color.Azure
+        Me.ClientSize = New System.Drawing.Size(363, 211)
+        Me.Controls.Add(Me.btnDelete)
+        Me.Controls.Add(Me.btnUndo)
+        Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.txtNewCountry)
         Me.Controls.Add(Me.lblNewCountry)
         Me.Name = "frmNewCountry"
@@ -58,4 +95,7 @@ Partial Class frmNewCountry
 
     Friend WithEvents lblNewCountry As Label
     Friend WithEvents txtNewCountry As TextBox
+    Friend WithEvents btnSave As Button
+    Friend WithEvents btnUndo As Button
+    Friend WithEvents btnDelete As Button
 End Class

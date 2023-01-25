@@ -90,7 +90,7 @@ Partial Class Form1
         '
         'btnChangeRemove
         '
-        Me.btnChangeRemove.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.btnChangeRemove.BackColor = System.Drawing.Color.OrangeRed
         Me.btnChangeRemove.Location = New System.Drawing.Point(447, 17)
         Me.btnChangeRemove.Name = "btnChangeRemove"
         Me.btnChangeRemove.Size = New System.Drawing.Size(104, 32)
@@ -100,7 +100,7 @@ Partial Class Form1
         '
         'btnNewCarModel
         '
-        Me.btnNewCarModel.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.btnNewCarModel.BackColor = System.Drawing.Color.LightSkyBlue
         Me.btnNewCarModel.Location = New System.Drawing.Point(232, 17)
         Me.btnNewCarModel.Name = "btnNewCarModel"
         Me.btnNewCarModel.Size = New System.Drawing.Size(100, 32)
@@ -110,7 +110,7 @@ Partial Class Form1
         '
         'btnNewCarBrand
         '
-        Me.btnNewCarBrand.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.btnNewCarBrand.BackColor = System.Drawing.Color.LightSkyBlue
         Me.btnNewCarBrand.Location = New System.Drawing.Point(120, 17)
         Me.btnNewCarBrand.Name = "btnNewCarBrand"
         Me.btnNewCarBrand.Size = New System.Drawing.Size(94, 32)
@@ -120,7 +120,7 @@ Partial Class Form1
         '
         'btnNewCountry
         '
-        Me.btnNewCountry.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.btnNewCountry.BackColor = System.Drawing.Color.LightSkyBlue
         Me.btnNewCountry.Location = New System.Drawing.Point(6, 17)
         Me.btnNewCountry.Name = "btnNewCountry"
         Me.btnNewCountry.Size = New System.Drawing.Size(96, 32)
