@@ -73,7 +73,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(447, 78)
+        Me.Label1.Location = New System.Drawing.Point(414, 76)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(28, 15)
         Me.Label1.TabIndex = 5
@@ -82,7 +82,7 @@ Partial Class Form1
         'lblNodTag
         '
         Me.lblNodTag.AutoSize = True
-        Me.lblNodTag.Location = New System.Drawing.Point(498, 76)
+        Me.lblNodTag.Location = New System.Drawing.Point(462, 76)
         Me.lblNodTag.Name = "lblNodTag"
         Me.lblNodTag.Size = New System.Drawing.Size(48, 15)
         Me.lblNodTag.TabIndex = 4
