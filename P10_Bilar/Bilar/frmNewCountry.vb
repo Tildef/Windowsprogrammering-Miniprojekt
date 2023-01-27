@@ -85,15 +85,18 @@ Public Class frmNewCountry
     End Sub
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
-        'Skapa en commandBuilder
-        Dim commandBuilder As New OleDbCommandBuilder(dataAdapter)
+        If MsgBox("Are you sure you wanna delete this country?", vbYesNo + vbQuestion) = vbYes Then
 
-        'Radera aktuell post och uppdatera dataadaptern
-        ds.Tables("countries").Rows(0).Delete()
-        dataAdapter.Update(ds, "countries")
+            'Skapa en commandBuilder
+            Dim commandBuilder As New OleDbCommandBuilder(dataAdapter)
 
-        'Returnera OK!
-        DialogResult = DialogResult.OK
+            'Radera aktuell post och uppdatera dataadaptern
+            ds.Tables("countries").Rows(0).Delete()
+            dataAdapter.Update(ds, "countries")
+
+            'Returnera OK!
+            DialogResult = DialogResult.OK
+        End If
     End Sub
 
     Private Sub frmNewCountry_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing

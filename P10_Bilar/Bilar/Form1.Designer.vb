@@ -41,7 +41,7 @@ Partial Class Form1
         Me.tvwCountries.Dock = System.Windows.Forms.DockStyle.Left
         Me.tvwCountries.Location = New System.Drawing.Point(0, 0)
         Me.tvwCountries.Name = "tvwCountries"
-        Me.tvwCountries.Size = New System.Drawing.Size(237, 382)
+        Me.tvwCountries.Size = New System.Drawing.Size(209, 382)
         Me.tvwCountries.TabIndex = 0
         '
         'grdDetail
@@ -49,10 +49,10 @@ Partial Class Form1
         Me.grdDetail.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.grdDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grdDetail.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.grdDetail.Location = New System.Drawing.Point(237, 0)
+        Me.grdDetail.Location = New System.Drawing.Point(209, 0)
         Me.grdDetail.Name = "grdDetail"
         Me.grdDetail.RowTemplate.Height = 25
-        Me.grdDetail.Size = New System.Drawing.Size(563, 382)
+        Me.grdDetail.Size = New System.Drawing.Size(591, 382)
         Me.grdDetail.TabIndex = 1
         '
         'pnlButtons
@@ -65,9 +65,9 @@ Partial Class Form1
         Me.pnlButtons.Controls.Add(Me.btnNewCarBrand)
         Me.pnlButtons.Controls.Add(Me.btnNewCountry)
         Me.pnlButtons.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.pnlButtons.Location = New System.Drawing.Point(237, 271)
+        Me.pnlButtons.Location = New System.Drawing.Point(209, 271)
         Me.pnlButtons.Name = "pnlButtons"
-        Me.pnlButtons.Size = New System.Drawing.Size(563, 111)
+        Me.pnlButtons.Size = New System.Drawing.Size(591, 111)
         Me.pnlButtons.TabIndex = 2
         '
         'Label1

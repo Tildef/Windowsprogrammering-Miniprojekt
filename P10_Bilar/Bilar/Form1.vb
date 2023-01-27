@@ -6,6 +6,7 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DbConnect()
         reloadT()
+        btnNewCarModel.Visible = True
     End Sub
 
     Private Sub reloadT()
@@ -51,14 +52,14 @@ Public Class Form1
             showDataGrid("SELECT * FROM car_brands where " & e.Node.Tag)
 
             'Förhindra att man kan lägga till bilmodell
-            btnNewCarModel.Enabled = False
+            btnNewCarModel.Visible = False
             btnChangeRemove.Enabled = True
         Else
             ' BilmärkenNod, visa alla bilmodeller
             showDataGrid("SELECT * FROM car_models where " & e.Node.Tag)
 
             'Tillåt att man kan lägga till bilmodeller
-            btnNewCarModel.Enabled = True
+            btnNewCarModel.Visible = True
             btnChangeRemove.Enabled = False
 
         End If
@@ -92,6 +93,27 @@ Public Class Form1
         End If
     End Sub
 
+    Private Sub btnNewCarModel_Click(sender As Object, e As EventArgs) Handles btnNewCarModel.Click
+        'Den valda nodens tag har formatet *CarBrandId=XXX" dvs CarBrandId-talet börjar i position 11
+        Dim CarBrandID As Integer = tvwCountries.SelectedNode.Tag.ToString.Substring(11)
+        frmNewCarModel.CarbrandId = CarBrandID
+        If frmNewCarModel.ShowDialog() = DialogResult.OK Then
+            'Ladda om trädvyn
+            'reloadTree()
+            showDataGrid("SELECT * FROM car_models where " & tvwCountries.SelectedNode.Tag)
+        End If
+    End Sub
+
+    Private Sub btnChangeRemove_Click(sender As Object, e As EventArgs) Handles btnChangeRemove.Click
+        'Noden innehåller uppgift om artistens id enligt
+        Dim countryId As Integer = tvwCountries.SelectedNode.Tag.ToString.Substring(10)
+        frmNewCountry.countryid = countryId
+
+        If frmNewCountry.ShowDialog() = DialogResult.OK Then
+            'Ladda om trädvyn
+            reloadT()
+        End If
+    End Sub
 
 End Class
 

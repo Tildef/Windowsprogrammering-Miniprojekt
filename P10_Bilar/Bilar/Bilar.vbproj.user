@@ -7,6 +7,9 @@
     <Compile Update="frmNewCarBrand.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmNewCarModel.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmNewCountry.vb">
       <SubType>Form</SubType>
     </Compile>

@@ -30,11 +30,13 @@ Partial Class frmNewCarModel
         Me.lblFuel = New System.Windows.Forms.Label()
         Me.lblConsumption = New System.Windows.Forms.Label()
         Me.lblYearModel = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.txtEngineSize = New System.Windows.Forms.TextBox()
+        Me.txtFuel = New System.Windows.Forms.TextBox()
+        Me.txtConsumption = New System.Windows.Forms.TextBox()
+        Me.cboYearModel = New System.Windows.Forms.ComboBox()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.btnUndo = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblNewCarModel
@@ -50,7 +52,7 @@ Partial Class frmNewCarModel
         'lblCarBrandId
         '
         Me.lblCarBrandId.AutoSize = True
-        Me.lblCarBrandId.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.lblCarBrandId.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.lblCarBrandId.Location = New System.Drawing.Point(12, 81)
         Me.lblCarBrandId.Name = "lblCarBrandId"
         Me.lblCarBrandId.Size = New System.Drawing.Size(66, 15)
@@ -69,7 +71,7 @@ Partial Class frmNewCarModel
         'lblName
         '
         Me.lblName.AutoSize = True
-        Me.lblName.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.lblName.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.lblName.Location = New System.Drawing.Point(12, 145)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(39, 15)
@@ -79,7 +81,7 @@ Partial Class frmNewCarModel
         'lblEngineSize
         '
         Me.lblEngineSize.AutoSize = True
-        Me.lblEngineSize.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.lblEngineSize.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.lblEngineSize.Location = New System.Drawing.Point(12, 196)
         Me.lblEngineSize.Name = "lblEngineSize"
         Me.lblEngineSize.Size = New System.Drawing.Size(66, 15)
@@ -89,7 +91,7 @@ Partial Class frmNewCarModel
         'lblFuel
         '
         Me.lblFuel.AutoSize = True
-        Me.lblFuel.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.lblFuel.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.lblFuel.Location = New System.Drawing.Point(12, 244)
         Me.lblFuel.Name = "lblFuel"
         Me.lblFuel.Size = New System.Drawing.Size(29, 15)
@@ -99,7 +101,7 @@ Partial Class frmNewCarModel
         'lblConsumption
         '
         Me.lblConsumption.AutoSize = True
-        Me.lblConsumption.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.lblConsumption.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.lblConsumption.Location = New System.Drawing.Point(12, 290)
         Me.lblConsumption.Name = "lblConsumption"
         Me.lblConsumption.Size = New System.Drawing.Size(80, 15)
@@ -109,48 +111,68 @@ Partial Class frmNewCarModel
         'lblYearModel
         '
         Me.lblYearModel.AutoSize = True
-        Me.lblYearModel.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.lblYearModel.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.lblYearModel.Location = New System.Drawing.Point(12, 344)
         Me.lblYearModel.Name = "lblYearModel"
         Me.lblYearModel.Size = New System.Drawing.Size(66, 15)
         Me.lblYearModel.TabIndex = 7
         Me.lblYearModel.Text = "Year Model"
         '
-        'TextBox1
+        'txtName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(110, 142)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(177, 23)
-        Me.TextBox1.TabIndex = 8
+        Me.txtName.Location = New System.Drawing.Point(110, 142)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(177, 23)
+        Me.txtName.TabIndex = 8
         '
-        'TextBox2
+        'txtEngineSize
         '
-        Me.TextBox2.Location = New System.Drawing.Point(110, 188)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(177, 23)
-        Me.TextBox2.TabIndex = 9
+        Me.txtEngineSize.Location = New System.Drawing.Point(110, 188)
+        Me.txtEngineSize.Name = "txtEngineSize"
+        Me.txtEngineSize.Size = New System.Drawing.Size(177, 23)
+        Me.txtEngineSize.TabIndex = 9
         '
-        'TextBox3
+        'txtFuel
         '
-        Me.TextBox3.Location = New System.Drawing.Point(110, 236)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(177, 23)
-        Me.TextBox3.TabIndex = 10
+        Me.txtFuel.Location = New System.Drawing.Point(110, 236)
+        Me.txtFuel.Name = "txtFuel"
+        Me.txtFuel.Size = New System.Drawing.Size(177, 23)
+        Me.txtFuel.TabIndex = 10
         '
-        'TextBox4
+        'txtConsumption
         '
-        Me.TextBox4.Location = New System.Drawing.Point(110, 282)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(177, 23)
-        Me.TextBox4.TabIndex = 11
+        Me.txtConsumption.Location = New System.Drawing.Point(110, 282)
+        Me.txtConsumption.Name = "txtConsumption"
+        Me.txtConsumption.Size = New System.Drawing.Size(177, 23)
+        Me.txtConsumption.TabIndex = 11
         '
-        'ComboBox1
+        'cboYearModel
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(110, 336)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(177, 23)
-        Me.ComboBox1.TabIndex = 12
+        Me.cboYearModel.FormattingEnabled = True
+        Me.cboYearModel.Location = New System.Drawing.Point(110, 336)
+        Me.cboYearModel.Name = "cboYearModel"
+        Me.cboYearModel.Size = New System.Drawing.Size(177, 23)
+        Me.cboYearModel.TabIndex = 12
+        '
+        'btnSave
+        '
+        Me.btnSave.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.btnSave.Location = New System.Drawing.Point(110, 386)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(77, 32)
+        Me.btnSave.TabIndex = 13
+        Me.btnSave.Text = "Save"
+        Me.btnSave.UseVisualStyleBackColor = False
+        '
+        'btnUndo
+        '
+        Me.btnUndo.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.btnUndo.Location = New System.Drawing.Point(210, 386)
+        Me.btnUndo.Name = "btnUndo"
+        Me.btnUndo.Size = New System.Drawing.Size(77, 32)
+        Me.btnUndo.TabIndex = 14
+        Me.btnUndo.Text = "Undo"
+        Me.btnUndo.UseVisualStyleBackColor = False
         '
         'frmNewCarModel
         '
@@ -158,11 +180,13 @@ Partial Class frmNewCarModel
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Azure
         Me.ClientSize = New System.Drawing.Size(410, 454)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.btnUndo)
+        Me.Controls.Add(Me.btnSave)
+        Me.Controls.Add(Me.cboYearModel)
+        Me.Controls.Add(Me.txtConsumption)
+        Me.Controls.Add(Me.txtFuel)
+        Me.Controls.Add(Me.txtEngineSize)
+        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.lblYearModel)
         Me.Controls.Add(Me.lblConsumption)
         Me.Controls.Add(Me.lblFuel)
@@ -186,9 +210,11 @@ Partial Class frmNewCarModel
     Friend WithEvents lblFuel As Label
     Friend WithEvents lblConsumption As Label
     Friend WithEvents lblYearModel As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents txtName As TextBox
+    Friend WithEvents txtEngineSize As TextBox
+    Friend WithEvents txtFuel As TextBox
+    Friend WithEvents txtConsumption As TextBox
+    Friend WithEvents cboYearModel As ComboBox
+    Friend WithEvents btnSave As Button
+    Friend WithEvents btnUndo As Button
 End Class
