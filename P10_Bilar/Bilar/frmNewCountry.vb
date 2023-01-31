@@ -103,4 +103,6 @@ Public Class frmNewCountry
         'Antag att nästa gång formuläret öppnas är det för att lägga till ny artist
         countryid = -1
     End Sub
+
+
 End Class

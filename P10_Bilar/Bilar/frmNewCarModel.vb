@@ -49,6 +49,7 @@ Public Class frmNewCarModel
         dbRow.Item("Fuel") = txtFuel.Text
         dbRow.Item("Consumption") = Val(txtConsumption.Text)
         dbRow.Item("CarBrandID") = lblCarBrand.Text
+        dbRow.Item("YearModel") = cboYearModel.Text
         'dbRow.Item("") = cboYearModel.SelectedValue
 
 
@@ -73,5 +74,9 @@ Public Class frmNewCarModel
         Else
             btnSave.Enabled = True
         End If
+    End Sub
+
+    Private Sub cboYearModel_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboYearModel.SelectedIndexChanged
+
     End Sub
 End Class
