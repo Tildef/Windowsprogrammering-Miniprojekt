@@ -50,4 +50,5 @@ Module modData
         ' Returnera datatabellen
         Return dt
     End Function
+
 End Module

@@ -196,6 +196,9 @@ Partial Class frmNewCarModel
         Me.Controls.Add(Me.lblCarBrand)
         Me.Controls.Add(Me.lblCarBrandId)
         Me.Controls.Add(Me.lblNewCarModel)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "frmNewCarModel"
         Me.Text = "frmNewCarModel"
         Me.ResumeLayout(False)

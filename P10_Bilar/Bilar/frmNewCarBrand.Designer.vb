@@ -95,9 +95,11 @@ Partial Class frmNewCarBrand
         '
         'frmNewCarBrand
         '
+        Me.AcceptButton = Me.btnSave
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Azure
+        Me.CancelButton = Me.btnUndo
         Me.ClientSize = New System.Drawing.Size(380, 337)
         Me.Controls.Add(Me.btnUndo)
         Me.Controls.Add(Me.btnSave)
@@ -106,6 +108,9 @@ Partial Class frmNewCarBrand
         Me.Controls.Add(Me.cboCountry)
         Me.Controls.Add(Me.lblCountry)
         Me.Controls.Add(Me.lblNewCarBrand)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "frmNewCarBrand"
         Me.Text = "frmNewCarBrand"
         Me.ResumeLayout(False)

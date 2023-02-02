@@ -77,15 +77,20 @@ Partial Class frmNewCountry
         '
         'frmNewCountry
         '
+        Me.AcceptButton = Me.btnSave
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Azure
+        Me.CancelButton = Me.btnUndo
         Me.ClientSize = New System.Drawing.Size(363, 211)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnUndo)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.txtNewCountry)
         Me.Controls.Add(Me.lblNewCountry)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "frmNewCountry"
         Me.Text = "frmNewCountry"
         Me.ResumeLayout(False)
